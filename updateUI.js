@@ -8,10 +8,29 @@ const uppercaseCheckbox = document.querySelector("#box1");
 const numbersCheckbox = document.querySelector("#box2");
 const symbolsCheckbox = document.querySelector("#box3");
 
+const copyButton = document.querySelector('#copyButton');
 
 slider.addEventListener('input',() => {
 sliderText.innerHTML = slider.value;
 })
+
+copyButton.addEventListener('click',() => {
+    copyToClipboard();
+})
+
+function copyToClipboard(){
+    if(field.value == "")
+        alert("No Password generated");
+    else{
+        navigator.clipboard.writeText(field.value);
+        copyButton.classList.add("copied");
+        copyButton.textContent = "Copied!"
+        setTimeout(() => {
+            copyButton.classList.remove("copied")
+            copyButton.textContent = "Copy"
+        },1500)
+    }
+}
 
 const button = document.querySelector("#generatePassButton");
 button.addEventListener('click',() => {

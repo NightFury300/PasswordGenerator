@@ -27,3 +27,6 @@ body{
 #generatePassButton{
     margin-top: 10px;
 }
+.copied{
+    color:greenyellow
+}
