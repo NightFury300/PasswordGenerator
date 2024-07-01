@@ -9,14 +9,29 @@
         <div><h1>Password Generator</h1></div>
 
         <label>Password Length:</label>
-        <input id="slider" type="range" min="4" max="20" >
+        <input id="slider" type="range" min="4" max="20">
         <output id="sliderVal"> 10</output>
-
+        <br>
+        <div>
+            <input type="checkbox" id="box0">
+            <label>Include lowercase letters</label>
+            <br>
+            <input type="checkbox" id="box1">
+            <label>Include uppercase letters</label>
+            <br>
+            <input type="checkbox" id="box2">
+            <label>Include numbers</label>
+            <br>
+            <input type="checkbox" id="box3">
+            <label>Include symbols</label>
+        </div>
+        <br>
+        <input type="text" readonly id="passwordText">
         <br>
         <button id="generatePassButton">
             Generate Password
         </button>
     </body>
-    <script src="script.js"></script>
+    <script src="passwordGeneration.js"></script>
     <script src="updateUI.js"></script>
 </html>
