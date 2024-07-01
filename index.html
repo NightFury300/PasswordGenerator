@@ -4,15 +4,19 @@
         <title>
             Password Generator
         </title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div><h1>Password Generator</h1></div>
+        <div id="title">
+            <h1>Password Generator</h1>
+        </div>
+        <div id="bodyContainer">
 
         <label>Password Length:</label>
         <input id="slider" type="range" min="4" max="20">
         <output id="sliderVal"> 10</output>
         <br>
-        <div>
+        <div id="checkboxes">
             <input type="checkbox" id="box0">
             <label>Include lowercase letters</label>
             <br>
@@ -31,6 +35,7 @@
         <button id="generatePassButton">
             Generate Password
         </button>
+    </div>
     </body>
     <script src="passwordGeneration.js"></script>
     <script src="updateUI.js"></script>

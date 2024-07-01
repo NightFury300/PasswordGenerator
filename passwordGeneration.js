@@ -2,7 +2,6 @@ let lowercase = 'abcdefghijklmnopqrstuvwxyz';
 let uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 let numbers = '0123456789';
 let symbols = `!@#$%^&*()_{[}]|`;
-console.log(symbols)
 function generatePassword(length){
     let password = "";
     for(let i = 0;i < length;i++){
